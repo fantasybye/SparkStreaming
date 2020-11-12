@@ -37,11 +37,11 @@ public class  SparkStreamingKafka {
                 KafkaUtils.createDirectStream(
                         ssc,
                         LocationStrategies.PreferConsistent(),
-                        ConsumerStrategies.<String, String>Subscribe(topicsSet, kafkaParams)
+                        ConsumerStrategies.Subscribe(topicsSet, kafkaParams)
                 );
 
-        JavaPairDStream pairs =  stream.mapToPair(record -> new Tuple2<>(record.key(), record.value()));
-        pairs.print();
+        stream.mapToPair(record -> new Tuple2<>(record.key(), record.value()));
+        stream.print();
         ssc.start();
         ssc.awaitTermination();
     }
