@@ -12,11 +12,12 @@ import org.apache.spark.streaming.api.java.*;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.apache.spark.streaming.kafka010.*;
 
+import org.mortbay.util.ajax.JSON;
 import scala.Tuple2;
 
 public class  SparkStreamingKafka {
     public static void main(String[] args) throws InterruptedException {
-        String brokers = "slave1:9092";
+        String brokers = "slave2:9092";
         String topics = "user_behavior";
         SparkConf conf = new SparkConf().setMaster("local[2]").setAppName("test");
         JavaSparkContext sc = new JavaSparkContext(conf);
@@ -39,9 +40,13 @@ public class  SparkStreamingKafka {
                         LocationStrategies.PreferConsistent(),
                         ConsumerStrategies.Subscribe(topicsSet, kafkaParams)
                 );
+//
+//        JavaDStream<String> lines = stream.map(JSON);
+//        JavaDStream<String> words = lines.flatMap(line -> Arrays.asList(JSON.parse(line)).iterator());
+//        JavaPairDStream<String, Integer> wordCount = words
+//                .mapToPair(word -> new Tuple2<>(word, 1));
 
-        stream.mapToPair(record -> new Tuple2<>(record.key(), record.value()));
-        stream.print();
+//        words.print();
         ssc.start();
         ssc.awaitTermination();
     }

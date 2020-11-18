@@ -145,5 +145,6 @@
     <orderEntry type="library" name="Maven: net.razorvine:pyrolite:4.30" level="project" />
     <orderEntry type="library" name="Maven: net.sf.py4j:py4j:0.10.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-crypto:1.0.0" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.13.3" level="application" />
   </component>
 </module>

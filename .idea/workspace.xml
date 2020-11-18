@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7a6c867-4545-423e-bd30-e977fb5ef392" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/SparkStreamingKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SparkStreamingKafka.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1kC0D8I7luYu70smLhbqk5jj7M4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spark-Streaming-Framework/SSF/code/bigdata" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.45172414" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SparkStreamingKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SparkStreamingKafka" />
+      <module name="SparkStreaming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SparkStreamingKafka" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7a6c867-4545-423e-bd30-e977fb5ef392" name="Default Changelist" comment="" />
+      <created>1605189146377</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605189146377</updated>
+      <workItem from="1605189147564" duration="899000" />
+      <workItem from="1605190125890" duration="357000" />
+      <workItem from="1605190494067" duration="4331000" />
+      <workItem from="1605195430508" duration="102000" />
+      <workItem from="1605702235348" duration="1337000" />
+      <workItem from="1605703690412" duration="607000" />
+      <workItem from="1605707554282" duration="5676000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1605195450580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605195450580</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix warning">
+      <created>1605195519888</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605195519888</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="fix warning" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix warning" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="99" key="#Project_Structure" timestamp="1605189606786">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605189606786" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1605714435088">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605714435088" />
+    <state x="577" y="202" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605714956634">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="577" y="202" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605714956634" />
+    <state x="477" y="91" key="CommitChangelistDialog2" timestamp="1605195518880">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="477" y="91" key="CommitChangelistDialog2/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605195518880" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1605702972971">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605702972971" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605713600788">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605713600788">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605713600788">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605713600788">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1605714962950">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605714962950" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1605195521422">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605195521422" />
+  </component>
+</project>
