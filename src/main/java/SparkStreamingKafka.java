@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.spark.*;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -12,12 +14,11 @@ import org.apache.spark.streaming.api.java.*;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.apache.spark.streaming.kafka010.*;
 
-import org.mortbay.util.ajax.JSON;
 import scala.Tuple2;
 
 public class  SparkStreamingKafka {
     public static void main(String[] args) throws InterruptedException {
-        String brokers = "slave2:9092";
+        String brokers = "slave1:9092,slave2:9092,slave3:9092";
         String topics = "user_behavior";
         SparkConf conf = new SparkConf().setMaster("local[2]").setAppName("test");
         JavaSparkContext sc = new JavaSparkContext(conf);
@@ -48,10 +49,12 @@ public class  SparkStreamingKafka {
 
 //        words.print();
         lines.foreachRDD(rdd->{
+            System.out.println("rdd count"+rdd.count());
             rdd.foreachPartition(iterator -> {
                 while (iterator.hasNext()){
-                    JSON.parse(iterator.next());
-                    System.out.println(iterator.next());
+                    JSONObject jo = JSON.parseObject(iterator.next());
+                    long uid = Long.parseLong(jo.getString("user_id"));
+                    System.out.println("uid"+uid);
                 }
             });
         });

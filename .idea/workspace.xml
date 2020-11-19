@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a6c867-4545-423e-bd30-e977fb5ef392" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_75.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/UserBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/WeiboContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pattern/TopicRegexp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparkStreaming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkStreaming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SparkStreamingKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SparkStreamingKafka.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +20,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +42,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1kC0D8I7luYu70smLhbqk5jj7M4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spark-Streaming-Framework/SSF/code/bigdata" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/bean" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,13 +65,19 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45172414" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\SparkStreaming\src\main\java\bean" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TopicRegexp">
     <configuration name="SparkStreamingKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SparkStreamingKafka" />
       <module name="SparkStreaming" />
@@ -63,21 +85,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="TopicRegexp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pattern.TopicRegexp" />
+      <module name="SparkStreaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TopicRegexp" />
         <item itemvalue="Application.SparkStreamingKafka" />
       </list>
     </recent_temporary>
@@ -98,6 +132,7 @@
       <workItem from="1605703690412" duration="607000" />
       <workItem from="1605707554282" duration="5676000" />
       <workItem from="1605752334062" duration="1919000" />
+      <workItem from="1605767409030" duration="5486000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1605195450580</created>
@@ -145,25 +180,25 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605702972971" />
-    <state width="1478" height="208" key="GridCell.Tab.0.bottom" timestamp="1605754057270">
+    <state width="1478" height="208" key="GridCell.Tab.0.bottom" timestamp="1605773331267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605754057270" />
+    <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
-    <state width="1478" height="208" key="GridCell.Tab.0.center" timestamp="1605754057270">
+    <state width="1478" height="208" key="GridCell.Tab.0.center" timestamp="1605773331267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605754057270" />
+    <state width="1478" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
-    <state width="1478" height="208" key="GridCell.Tab.0.left" timestamp="1605754057270">
+    <state width="1478" height="208" key="GridCell.Tab.0.left" timestamp="1605773331267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605754057270" />
+    <state width="1478" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
-    <state width="1478" height="208" key="GridCell.Tab.0.right" timestamp="1605754057270">
+    <state width="1478" height="208" key="GridCell.Tab.0.right" timestamp="1605773331267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605754057270" />
+    <state width="1478" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1605714962950">
       <screen x="0" y="0" width="1920" height="1050" />

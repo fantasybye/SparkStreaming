@@ -16,6 +16,7 @@
     <orderEntry type="library" name="Maven: org.apache.spark:spark-tags_2.12:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.10" level="project" />
     <orderEntry type="library" name="Maven: org.spark-project.spark:unused:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.75" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming-kafka-0-10_2.12:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-token-provider-kafka-0-10_2.12:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.4.1" level="project" />
