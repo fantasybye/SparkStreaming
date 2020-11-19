@@ -47,6 +47,13 @@ public class  SparkStreamingKafka {
 //                .mapToPair(word -> new Tuple2<>(word, 1));
 
 //        words.print();
+        stream.foreachRDD(rdd->{
+            rdd.foreachPartition(iterator -> {
+                while (iterator.hasNext()){
+                    System.out.println(iterator.next().value());
+                }
+            });
+        });
         ssc.start();
         ssc.awaitTermination();
     }

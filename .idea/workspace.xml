@@ -50,6 +50,10 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45172414" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RunManager">
     <configuration name="SparkStreamingKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -59,13 +63,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,6 +97,7 @@
       <workItem from="1605702235348" duration="1337000" />
       <workItem from="1605703690412" duration="607000" />
       <workItem from="1605707554282" duration="5676000" />
+      <workItem from="1605752334062" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1605195450580</created>
