@@ -41,16 +41,17 @@ public class  SparkStreamingKafka {
                         ConsumerStrategies.Subscribe(topicsSet, kafkaParams)
                 );
 //
-//        JavaDStream<String> lines = stream.map(JSON);
+        JavaDStream<String> lines = stream.map(ConsumerRecord::value);
 //        JavaDStream<String> words = lines.flatMap(line -> Arrays.asList(JSON.parse(line)).iterator());
 //        JavaPairDStream<String, Integer> wordCount = words
 //                .mapToPair(word -> new Tuple2<>(word, 1));
 
 //        words.print();
-        stream.foreachRDD(rdd->{
+        lines.foreachRDD(rdd->{
             rdd.foreachPartition(iterator -> {
                 while (iterator.hasNext()){
-                    System.out.println(iterator.next().value());
+                    JSON.parse(iterator.next());
+                    System.out.println(iterator.next());
                 }
             });
         });
