@@ -1,7 +1,6 @@
 package pattern;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,21 +22,21 @@ public class TopicRegexp {
         return result;
     }
 
-    public static  void main(String[] args){
-        TopicRegexp t = new TopicRegexp();
-        HashMap<String,Integer> test = new HashMap<>();
-        test.put("sdasd", 2);
-        test.put("dadas", 4);
-        HashMap<String,Integer> hashMap = t.match("#sdasd#sasdadasd#dadas#");
-        for (Map.Entry<String, Integer> entry:hashMap.entrySet()){
-            if(test.containsKey(entry.getKey())){
-                test.put(entry.getKey(), test.get(entry.getKey())+ entry.getValue());
-            }else{
-                test.put(entry.getKey(), entry.getValue());
-            }
-        }
-        for(String key:test.keySet()) {
-            System.out.println(key + ":" + test.get(key));
-        }
-    }
+//    public static  void main(String[] args){
+//        TopicRegexp t = new TopicRegexp();
+//        HashMap<String,Integer> test = new HashMap<>();
+//        test.put("sdasd", 2);
+//        test.put("dadas", 4);
+//        HashMap<String,Integer> hashMap = t.match("#sdasd#sasdadasd#dadas#");
+//        for (Map.Entry<String, Integer> entry:hashMap.entrySet()){
+//            if(test.containsKey(entry.getKey())){
+//                test.put(entry.getKey(), test.get(entry.getKey())+ entry.getValue());
+//            }else{
+//                test.put(entry.getKey(), entry.getValue());
+//            }
+//        }
+//        for(String key:test.keySet()) {
+//            System.out.println(key + ":" + test.get(key));
+//        }
+//    }
 }

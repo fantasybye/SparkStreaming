@@ -14,7 +14,8 @@ import org.apache.spark.streaming.api.java.*;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.apache.spark.streaming.kafka010.*;
 
-import scala.Tuple2;
+import pattern.TopicRegexp;
+import utils.TopicCount;
 
 public class  SparkStreamingKafka {
     public static void main(String[] args) throws InterruptedException {
@@ -50,13 +51,19 @@ public class  SparkStreamingKafka {
 //        words.print();
         lines.foreachRDD(rdd->{
             System.out.println("rdd count"+rdd.count());
+            TopicCount tc = new TopicCount();
             rdd.foreachPartition(iterator -> {
                 while (iterator.hasNext()){
                     JSONObject jo = JSON.parseObject(iterator.next());
-                    long uid = Long.parseLong(jo.getString("user_id"));
-                    System.out.println("uid"+uid);
+                    String content = jo.getString("content");
+                    TopicRegexp tr = new TopicRegexp();
+                    HashMap<String,Integer> hashMap = tr.match(content);
+                    tc.addToTopicCount(hashMap);
                 }
             });
+            for(String key:tc.getTopicCount().keySet()) {
+                System.out.println(key + ":" + tc.getTopicCount().get(key));
+            }
         });
         ssc.start();
         ssc.awaitTermination();

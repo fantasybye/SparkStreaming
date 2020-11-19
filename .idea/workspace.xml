@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a6c867-4545-423e-bd30-e977fb5ef392" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_75.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/UserBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/WeiboContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pattern/TopicRegexp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/TopicCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkStreaming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkStreaming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SparkStreamingKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SparkStreamingKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pattern/TopicRegexp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pattern/TopicRegexp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <recent name="D:\develop\SparkStreaming\src\main\java\bean" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TopicRegexp">
+  <component name="RunManager" selected="Application.SparkStreamingKafka">
     <configuration name="SparkStreamingKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SparkStreamingKafka" />
       <module name="SparkStreaming" />
@@ -98,21 +97,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TopicRegexp" />
         <item itemvalue="Application.SparkStreamingKafka" />
+        <item itemvalue="Application.TopicRegexp" />
       </list>
     </recent_temporary>
   </component>
@@ -180,26 +181,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605702972971" />
-    <state width="1478" height="208" key="GridCell.Tab.0.bottom" timestamp="1605773331267">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605781454966">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
-    <state width="1478" height="208" key="GridCell.Tab.0.center" timestamp="1605773331267">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605781454966" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605781454965">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
-    <state width="1478" height="208" key="GridCell.Tab.0.left" timestamp="1605773331267">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605781454965" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605781454965">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
-    <state width="1478" height="208" key="GridCell.Tab.0.right" timestamp="1605773331267">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605781454965" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605781454965">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605773331267" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605713600788" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605781454965" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1605714962950">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -208,5 +209,23 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605195521422" />
+    <state x="764" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605779489717">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="764" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605779489717" />
+    <state x="498" y="260" width="923" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605781199940">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="498" y="260" width="923" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050/-1920.-130.1920.1050@0.0.1920.1050" timestamp="1605781199940" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchMethodError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
