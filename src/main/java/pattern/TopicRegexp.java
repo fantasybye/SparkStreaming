@@ -1,10 +1,12 @@
 package pattern;
 
+
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class TopicRegexp {
+public class TopicRegexp implements Serializable {
     String regex = "#[^#]*#";
     Pattern pattern = Pattern.compile(regex);
     public HashMap<String, Integer> match(String str){
@@ -13,6 +15,7 @@ public class TopicRegexp {
         while(matcher.find()){
             String key = matcher.group();
             key = key.replace("#", "");
+            if(key.equals("考研")) continue;
             if(result.containsKey(key)){
                 result.put(key,result.get(key)+1);
             }else{
